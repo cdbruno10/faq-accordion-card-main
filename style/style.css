@@ -49,7 +49,7 @@ body {
 .img__shadow {
   position: absolute;
   width: 250px;
-  height: 250px;
+  height: 150px;
   background-image: url(../images/bg-pattern-mobile.svg);
   background-repeat: no-repeat;
   margin-top: 150px;
@@ -77,27 +77,27 @@ body {
   margin-top: 20px;
   border: 1px solid hsl(240, 5%, 91%);
 }
-.querstion1,
-.querstion2,
-.querstion3,
-.querstion4,
-.querstion5 {
+.question {
   font-size: 14px;
   color: var(--Verydarkgrayishblue);
   margin-top: 20px;
   display: flex;
   justify-content: space-between;
+  z-index: 4;
+}
+.question:hover {
+  color: var(--Softred);
 }
 img {
   width: 10px;
   height: 5px;
 }
-.paragraph1,
-.paragraph2,
-.paragraph3,
-.paragraph4,
-.paragraph5 {
-  display: none;
+#paragraph1,
+#paragraph2,
+#paragraph3,
+#paragraph4,
+#paragraph5 {
+  display: hide;
   font-size: 12px;
   padding-top: 20px;
   color: var(--Darkgrayishblue);
@@ -112,15 +112,19 @@ img {
     position: absolute;
     display: flex;
 
-    width: 920px;
+    width: 450px;
     height: 508px;
     margin: 0px 260px 130px 260px;
     border-radius: 20px;
     overflow: hidden;
+    z-index: 0;
+  }
+  .question {
+    z-index: 5;
   }
   .img__primary {
     position: absolute;
-    width: 600px;
+    width: 500px;
     height: 400px;
     background-image: url(../images/illustration-woman-online-desktop.svg);
     margin-top: 70px;
