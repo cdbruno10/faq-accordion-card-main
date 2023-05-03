@@ -87,6 +87,7 @@ body {
 }
 .question:hover {
   color: var(--Softred);
+  cursor: pointer;
 }
 img {
   width: 10px;
@@ -97,7 +98,7 @@ img {
 #paragraph3,
 #paragraph4,
 #paragraph5 {
-  display: hide;
+  display: none;
   font-size: 12px;
   padding-top: 20px;
   color: var(--Darkgrayishblue);
